@@ -1,0 +1,49 @@
+<html>
+  <head> 
+    <title>消費税API</title> 
+    <meta charset="utf-8" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+
+    <style type="text/css">
+      body{
+        font-size: 16px;
+        color: black;
+        /*font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;*/
+        font-family: 'メイリオ',Meiryo,Tahoma,Arial,Verdana,sans-serif;
+        /*background-color: #090909;*/
+        /*background-color: white;*/
+        width: 800px;
+        margin: 0 auto;
+      }
+
+      h1{
+        font-size: 64px;
+        border: solid;
+        border-color: gray;
+        border-width: 0 0 1px 0;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        padding: 0;margin: 0;
+      }
+
+      h2{
+        border: solid;
+        border-color: gray;
+        border-width: 0 0 1px 0;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22814448-8']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head> 
+  <body><%= yield %></body>
+</html>
+

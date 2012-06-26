@@ -1,0 +1,16 @@
+<h1>消費税API</h1>
+<p>
+Firefox/Chrome/Safari only<br />
+現在の消費税をストリーミングで受信できるやつ
+<p>
+<hr style="border-style: solid; border-width: 0 0 1px 0; border-color: gray; width: 100%;" />
+
+<div id='node'></div>
+
+<script type="text/javascript">
+//$("#node").live("click", function(){ $(this).slideUp("fast"); });
+(new EventSource('./stream')).onmessage = function(e) {
+  $("<div />").append( $("<div />").text(e.data).html() ).hide().prependTo('#node').slideDown("fast");
+};
+</script>
+
